@@ -52,10 +52,12 @@
 \graphicspath{ {./images/} }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Personal Data
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
 %%% Essentials
+\photo[rectangle,noedge,right]{./images/linkedIn_QR.JPG}
 \name{Hollman B.}{Nuñez Castro}
 \address{Bogotá - Colombia}
 \mobile{(+57) 3023844696} 
@@ -75,10 +77,9 @@
   {Hollman N. Castro ~~~·~~~Résumé}
   {\thepage}
 \begin{document}
-\begin{flushright}
-    \includegraphics[width=0.2\textwidth]{linkedIn_QR}
-\end{flushright}
-\makecvheader
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
 
 %%% Import contents
 \import{\sectiondir}{education.tex}
